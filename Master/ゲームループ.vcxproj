@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A87B7C2C-9ED1-4F0A-9442-7C259462161C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ゲームループ</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(DXSDK_DIR)include;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Samples\SampleCommonCode\src;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\PhysXLoader\include;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\Physics\include;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\Foundation\include;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Graphics\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(DXSDK_DIR)lib\x86;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\lib\Win32;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Graphics\lib\win32\glut;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(DXSDK_DIR)include;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Samples\SampleCommonCode\src;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\PhysXLoader\include;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\Physics\include;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\Foundation\include;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Graphics\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(DXSDK_DIR)lib\x64;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\lib\Win32;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Graphics\lib\win32\glut;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(DXSDK_DIR)include;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Samples\SampleCommonCode\src;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\PhysXLoader\include;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\Physics\include;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\Foundation\include;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Graphics\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(DXSDK_DIR)lib\x86;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\lib\Win32;C:\Program Files (x86)\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Graphics\lib\win32\glut;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(DXSDK_DIR)include;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Samples\SampleCommonCode\src;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\PhysXLoader\include;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\Physics\include;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\Foundation\include;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Graphics\include\win32;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(DXSDK_DIR)lib\x64;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\SDKs\lib\Win32;C:\Program Files %28x86%29\NVIDIA Corporation\NVIDIA PhysX SDK\v2.8.1\Graphics\lib\win32\glut;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glut32.lib;d3d9.lib;d3dx9d.lib;dinput8.lib;dxguid.lib;%(AdditionalDependencies);ws2_32.lib;winmm.lib;</AdditionalDependencies>
+      <AdditionalOptions>/LIBPATH:../../../SDKs/lib/win32 /LIBPATH:../../../Graphics/lib/win32/glut /DEBUG PhysXLoader.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glut32.lib;d3d9.lib;d3dx9d.lib;dinput8.lib;dxguid.lib;%(AdditionalDependencies);ws2_32.lib;winmm.lib;</AdditionalDependencies>
+      <AdditionalOptions>/LIBPATH:../../../SDKs/lib/win32 /LIBPATH:../../../Graphics/lib/win32/glut /DEBUG PhysXLoader.lib  %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glut32.lib;d3d9.lib;d3dx9d.lib;dinput8.lib;dxguid.lib;%(AdditionalDependencies);ws2_32.lib;winmm.lib;</AdditionalDependencies>
+      <AdditionalOptions>/LIBPATH:../../../SDKs/lib/win32 /LIBPATH:../../../Graphics/lib/win32/glut /DEBUG PhysXLoader.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glut32.lib;d3d9.lib;d3dx9d.lib;dinput8.lib;dxguid.lib;%(AdditionalDependencies);ws2_32.lib;winmm.lib;</AdditionalDependencies>
+      <AdditionalOptions>/LIBPATH:../../../SDKs/lib/win32 /LIBPATH:../../../Graphics/lib/win32/glut /DEBUG PhysXLoader.lib  %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="billboard.cpp" />
+    <ClCompile Include="BSphere.cpp" />
+    <ClCompile Include="C2DObj.cpp" />
+    <ClCompile Include="C3DObj.cpp" />
+    <ClCompile Include="CAttraction.cpp" />
+    <ClCompile Include="CAttraction_Coaster.cpp" />
+    <ClCompile Include="CAttraction_Popcorn.cpp" />
+    <ClCompile Include="CAttraction_Standby.cpp" />
+    <ClCompile Include="CCamera.cpp" />
+    <ClCompile Include="CCoaster_ON.cpp" />
+    <ClCompile Include="Ccoffee_cup.cpp" />
+    <ClCompile Include="CEnemy.cpp" />
+    <ClCompile Include="CEnemy_Big.cpp" />
+    <ClCompile Include="CEnemy_Middle.cpp" />
+    <ClCompile Include="CEnemy_Small.cpp" />
+    <ClCompile Include="CEnemy_Special.cpp" />
+    <ClCompile Include="Cfreefall.cpp" />
+    <ClCompile Include="CGameObj.cpp" />
+    <ClCompile Include="CGauge.cpp" />
+    <ClCompile Include="CLight.cpp" />
+    <ClCompile Include="CMeshField.cpp" />
+    <ClCompile Include="CMeshField_Cylinder.cpp" />
+    <ClCompile Include="COrnament.cpp" />
+    <ClCompile Include="COrnament_Bench.cpp" />
+    <ClCompile Include="COrnament_DustBox.cpp" />
+    <ClCompile Include="COrnament_Fountain.cpp" />
+    <ClCompile Include="COrnament_Gasubonbe.cpp" />
+    <ClCompile Include="COrnament_Husen.cpp" />
+    <ClCompile Include="COrnament_Kanransya.cpp" />
+    <ClCompile Include="COrnament_Lamp.cpp" />
+    <ClCompile Include="COrnament_Meri.cpp" />
+    <ClCompile Include="COrnament_Poteto.cpp" />
+    <ClCompile Include="Cplayer.cpp" />
+    <ClCompile Include="CSkinAnimation.cpp" />
+    <ClCompile Include="CTexture.cpp" />
+    <ClCompile Include="CUserInterface.cpp" />
+    <ClCompile Include="Cwheel.cpp" />
+    <ClCompile Include="debug_font.cpp" />
+    <ClCompile Include="exp.cpp" />
+    <ClCompile Include="fede.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="gamepad.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="CMesh_SkyDome.cpp" />
+    <ClCompile Include="manual.cpp" />
+    <ClCompile Include="move.cpp" />
+    <ClCompile Include="number.cpp" />
+    <ClCompile Include="result.cpp" />
+    <ClCompile Include="scene.cpp" />
+    <ClCompile Include="score_draw.cpp" />
+    <ClCompile Include="Score_total.cpp" />
+    <ClCompile Include="shadow.cpp" />
+    <ClCompile Include="sound.cpp" />
+    <ClCompile Include="system_timer.cpp" />
+    <ClCompile Include="tex_animation.cpp" />
+    <ClCompile Include="title.cpp" />
+    <ClCompile Include="Titlekanransya.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="billboard.h" />
+    <ClInclude Include="BSphere.h" />
+    <ClInclude Include="C2DObj.h" />
+    <ClInclude Include="C3DObj.h" />
+    <ClInclude Include="camera.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="CAttraction.h" />
+    <ClInclude Include="CAttraction_Coaster .h" />
+    <ClInclude Include="CAttraction_Popcorn.h" />
+    <ClInclude Include="CAttraction_Standby.h" />
+    <ClInclude Include="CCamera.h" />
+    <ClInclude Include="CCoaster_ON.h" />
+    <ClInclude Include="Ccoffee_cup.h" />
+    <ClInclude Include="CEnemy.h" />
+    <ClInclude Include="CEnemy_Big.h" />
+    <ClInclude Include="CEnemy_Middle.h" />
+    <ClInclude Include="CEnemy_Small.h" />
+    <ClInclude Include="CEnemy_Special.h" />
+    <ClInclude Include="Cfreefall.h" />
+    <ClInclude Include="CGameObj.h" />
+    <ClInclude Include="CLight.h" />
+    <ClInclude Include="CMeshField.h" />
+    <ClInclude Include="CMeshField_Cylinder.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="COrnament.h" />
+    <ClInclude Include="COrnament_Bench.h" />
+    <ClInclude Include="COrnament_DustBox.h" />
+    <ClInclude Include="COrnament_Fountain.h" />
+    <ClInclude Include="COrnament_Gasubonbe.h" />
+    <ClInclude Include="COrnament_Husen.h" />
+    <ClInclude Include="COrnament_Kanransya.h" />
+    <ClInclude Include="COrnament_Lamp.h" />
+    <ClInclude Include="COrnament_Meri.h" />
+    <ClInclude Include="COrnament_Poteto.h" />
+    <ClInclude Include="Cplayer.h" />
+    <ClInclude Include="CSkinAnimation.h" />
+    <ClInclude Include="CTexture.h" />
+    <ClInclude Include="CUserInterface.h" />
+    <ClInclude Include="Cwheel.h" />
+    <ClInclude Include="debug_font.h" />
+    <ClInclude Include="exp.h" />
+    <ClInclude Include="fade.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="gamepad.h" />
+    <ClInclude Include="CGauge.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="CMesh_SkyDome.h" />
+    <ClInclude Include="manual.h" />
+    <ClInclude Include="move.h" />
+    <ClInclude Include="number.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="result.h" />
+    <ClInclude Include="scene.h" />
+    <ClInclude Include="score_draw.h" />
+    <ClInclude Include="Score_total.h" />
+    <ClInclude Include="shadow.h" />
+    <ClInclude Include="sound.h" />
+    <ClInclude Include="system_timer.h" />
+    <ClInclude Include="tex_animation.h" />
+    <ClInclude Include="title.h" />
+    <ClInclude Include="Titlekanransya.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ゲームループ.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="asset\gameicon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
